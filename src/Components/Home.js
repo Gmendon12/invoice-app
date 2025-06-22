@@ -4,9 +4,18 @@ import {Link} from 'react-router-dom'
 
 function Home() {
   return (
-    <div className='home-page'>
+    <div className='home-page'
+    style={{
+      display:'flex',
+      flexDirection: 'column',
+      gap:'40px',
+      alignContent:'center',
+      alignItems:'center',
+      paddingTop:'80px'
+    }}
+    >
+      <h3>Create Your invoice in seconds</h3>
         <Link to='/invoice'>
-             <h3>Create Your invoice in seconds</h3>
             <Button variant ='contained'>CREATE YOUR INVOICE NOW!</Button>        
         </Link>
     </div>
